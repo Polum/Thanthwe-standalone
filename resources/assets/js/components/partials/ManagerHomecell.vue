@@ -127,7 +127,7 @@
 <script>
 import { mapState } from "vuex";
 import axios from './../../interceptor';
-import { homecellActivityURL } from '../../config';
+// import { homecellActivityURL } from '../../config';
 
 export default {
     data(){
@@ -149,7 +149,7 @@ export default {
     },
     methods:{
         getActivities(page_url){
-            page_url = page_url || homecellActivityURL;
+            page_url = page_url; //|| homecellActivityURL;
             axios.get(page_url)
             .then(res =>{
                 let data = res.data;

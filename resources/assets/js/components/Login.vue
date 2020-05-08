@@ -3,7 +3,7 @@
     <div class="navbar">
       <div class="pull-center">
             <router-link class="navbar-brand" to ="/">
-                <img :src="'./../../../images/logo.png'" alt="logo" />
+                <img :src="'./../../../images/lwc.jpeg'" alt="logo" />
             </router-link>
       </div>
     </div>
@@ -17,7 +17,7 @@
 
     <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
       <div class="m-b text-sm">
-        Sign in with your Thanthwe Account
+        Sign in with your Living Waters Account
       </div>
       <form name="form" @submit.prevent="login">
         <div class="md-form-group float-label">
