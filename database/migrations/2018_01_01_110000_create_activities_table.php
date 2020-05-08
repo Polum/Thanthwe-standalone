@@ -21,14 +21,9 @@ class CreateActivitiesTable extends Migration
             $table->date('end_date');
             $table->time('start_time');
             $table->time('end_time');
-            $table->integer('church_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
 
-        });
-
-        Schema::table('activities', function ($table){
-            $table->foreign('church_id')->references('id')->on('churches');
         });
     }
 
