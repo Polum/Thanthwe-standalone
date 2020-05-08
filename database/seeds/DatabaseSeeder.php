@@ -23,6 +23,10 @@ class DatabaseSeeder extends Seeder
             array('name' => 'admin', 'level' => 1)
         ]);
 
+        DB::table('offering_types')->insert([
+            array('offering_title' => 'tithe')
+        ]);
+
         $password = bcrypt('qwerty');
         DB::table('users')->insert([
             'name' => 'John Doe',
